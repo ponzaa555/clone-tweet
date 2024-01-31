@@ -12,4 +12,4 @@ function SidebarLink({Icon, text, active}) {
   )
 }
 
-export default SidebarLink
+export default SidebarLink;

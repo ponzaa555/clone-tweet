@@ -5,6 +5,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["rb.gy"]
+    remotePatterns:[{"protocol":"https","hostname":"rb.gy","pathname":"**"}]
   },
 };

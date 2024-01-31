@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+ /* ใช้ @ apply เพราะจะใช้ taiwindcss */
 @layer base{
   body {
     @apply bg-black
@@ -15,7 +15,23 @@
     cursor-pointer w-[32px] h-[32px] xl:w-auto xl:h-auto xl:py-2
     xl:px-4 transition duration-200 ease-out;
   }
+  .icon{
+    @apply cursor-pointer w-9 h-9 hover:bg-[#1d9bf0] hover:bg-opacity-10 
+    flex items-center justify-center rounded-full transition ease-out;
+  }
+  .texta{
+    @apply bg-transparent outline-none text-white text-lg placeholder:text-gray-500
+    tracking-wide w-full min-h-[80px] overflow-y-hidden
+  }
+  .tweetbutton{
+    @apply bg-[#1d9bf0] px-4 py-1.5 rounded-full text-white font-bold hover:bg-[#1a8cd8]
+    disabled:hover:bg-[#1d9bf0] disabled:opacity-50 disabled:cursor-default
+  }
+  .tag{
+    @apply  text-[#1d9bf0] font-normal hover:underline cursor-pointer;
+  }
 }
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
